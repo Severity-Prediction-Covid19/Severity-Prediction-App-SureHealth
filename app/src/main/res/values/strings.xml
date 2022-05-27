@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SureHealth</string>
+    <string name="beranda">Beranda</string>
+    <string name="deskripsi">Silahkan lakukan test untuk mengetahui apa yang sedang kamu alami</string>
+    <string name="pertanyaan">Ingin mencari tahu hasil gejala mu?</string>
+    <string name="nama_user">Nama User</string>
+    <string name="salam">Halo,</string>
 </resources>
