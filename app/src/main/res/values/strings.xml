@@ -5,4 +5,6 @@
     <string name="pertanyaan">Ingin mencari tahu hasil gejala mu?</string>
     <string name="nama_user">Nama User</string>
     <string name="salam">Halo,</string>
+    <string name="kuisioner">Kuisioner</string>
+    <string name="peringatan_quiz">Jawablah pertanyaan-pertanyaan di bawah ini sesuai dengan gejala yang kalian alami!</string>
 </resources>
