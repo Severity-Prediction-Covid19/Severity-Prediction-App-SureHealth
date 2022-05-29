@@ -12,4 +12,6 @@
     <string name="waktu">Waktu</string>
     <string name="tingkat_keparahan">Tingkat Keparahan</string>
     <string name="hapus">Hapus</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="pertanyaan_1">Apakah Anda mengalami demam?</string>
 </resources>
