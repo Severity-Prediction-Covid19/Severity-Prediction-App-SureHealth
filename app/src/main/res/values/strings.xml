@@ -14,4 +14,9 @@
     <string name="hapus">Hapus</string>
     <string name="riwayat">Riwayat</string>
     <string name="pertanyaan_1">Apakah Anda mengalami demam?</string>
+    <string name="kembali">Kembali</string>
+    <string name="foto_profil">Foto Profil</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="satu">1</string>
+    <string name="dua">2</string>
 </resources>

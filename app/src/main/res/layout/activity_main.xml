@@ -28,7 +28,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:tint="@color/dark_green" />
+                app:tint="@color/dark_green"
+                android:contentDescription="@string/kembali" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -69,7 +70,8 @@
                 android:layout_height="64dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@tools:sample/avatars" />
+                tools:src="@tools:sample/avatars"
+                android:contentDescription="@string/foto_profil" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -107,7 +109,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_edit_24"
-                app:tint="@color/dark_green" />
+                app:tint="@color/dark_green"
+                android:contentDescription="@string/edit_profil" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

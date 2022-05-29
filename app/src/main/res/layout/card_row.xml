@@ -69,7 +69,7 @@
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            card_view:tint="@color/black"
+            card_view:tint="@color/dark_green"
             android:contentDescription="@string/hapus" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
