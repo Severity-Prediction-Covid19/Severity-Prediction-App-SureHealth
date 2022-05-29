@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SureHealth">
         <activity
+            android:name=".ui.history.HistoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.quiz.QuizActivity"
             android:exported="false" />
         <activity

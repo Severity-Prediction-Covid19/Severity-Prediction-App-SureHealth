@@ -7,4 +7,9 @@
     <string name="salam">Halo,</string>
     <string name="kuisioner">Kuisioner</string>
     <string name="peringatan_quiz">Jawablah pertanyaan-pertanyaan di bawah ini sesuai dengan gejala yang kalian alami!</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="hasil">Hasil</string>
+    <string name="waktu">Waktu</string>
+    <string name="tingkat_keparahan">Tingkat Keparahan</string>
+    <string name="hapus">Hapus</string>
 </resources>
