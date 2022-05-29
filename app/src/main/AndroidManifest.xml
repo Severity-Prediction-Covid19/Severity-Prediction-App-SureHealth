@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.capstone.surehealth">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_logo_1"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/app_logo_1"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SureHealth">
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.SureHealth"
+        tools:targetApi="m">
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.SureHealth.NoActionBar" />
         <activity
             android:name=".ui.result.ResultActivity"
             android:exported="false" />
@@ -19,8 +30,9 @@
             android:name=".ui.quiz.QuizActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.main.MainActivity"
-            android:exported="true">
+            android:name=".ui.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

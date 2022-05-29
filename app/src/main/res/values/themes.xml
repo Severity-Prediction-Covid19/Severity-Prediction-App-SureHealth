@@ -19,4 +19,13 @@
         <item name="android:layout_marginEnd">16dp</item>
     </style>
 
+    <style name="Theme.SureHealth.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SureHealth.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SureHealth.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
