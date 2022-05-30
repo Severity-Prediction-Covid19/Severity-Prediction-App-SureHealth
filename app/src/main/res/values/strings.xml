@@ -1,5 +1,44 @@
 <resources>
     <string name="app_name">SureHealth</string>
+<!--    a-->
+    <string name="beranda">Beranda</string>
+    <string name="deskripsi">Silahkan lakukan test untuk mengetahui apa yang sedang kamu alami</string>
+    <string name="pertanyaan">Ingin mencari tahu hasil gejala mu?</string>
+    <string name="nama_user">Nama User</string>
+    <string name="salam">Halo,</string>
+    <string name="kuisioner">Kuisioner</string>
+    <string name="peringatan_quiz">Jawablah pertanyaan-pertanyaan di bawah ini sesuai dengan gejala yang kalian alami!</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="hasil">Hasil</string>
+    <string name="waktu">Waktu</string>
+    <string name="tingkat_keparahan">Tingkat Keparahan</string>
+    <string name="hapus">Hapus</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="pertanyaan_1">Apakah Anda mengalami demam?</string>
+    <string name="kembali">Kembali</string>
+    <string name="foto_profil">Foto Profil</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="satu">1</string>
+    <string name="dua">2</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="riwayat_tes">Riwayat Tes</string>
+    <string name="mulai_tes">Mulai Tes</string>
+    <string name="menu">Menu</string>
+    <string name="keluar">Keluar</string>
+    <string name="app_logo">App Logo</string>
+
+
+<!--    b-->
     <string name="login">Email</string>
     <string name="text_login2">Masukkan Email dan Password Anda!</string>
     <string name="imagelogin">ImageLogin</string>
