@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SureHealth</string>
+    <string name="error_input">Email atau Password salah</string>
+    <string name="login">Masuk</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_intent">Buat akun</string>
+    <string name="register_text">Belum memiliki akun?</string>
+    <string name="text_login"> Masuk </string>
+    <string name="text_login2">Masukkan Email dan Password Anda!</string>
 </resources>
