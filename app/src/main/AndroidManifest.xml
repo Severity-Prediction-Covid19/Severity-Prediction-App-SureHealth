@@ -10,7 +10,7 @@
         android:roundIcon="@drawable/app_logo_1"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        tools:targetApi="m">
+        tools:targetApi="m"
         android:theme="@style/Theme.SureHealth">
 
         <activity

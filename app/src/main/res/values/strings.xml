@@ -46,4 +46,5 @@
     <string name="register_intent">Buat Akun</string>
     <string name="text_login">Masuk</string>
     <string name="password">Password</string>
+    <string name="register">Register</string>
 </resources>
