@@ -87,7 +87,7 @@
         android:drawablePadding="12dp"
         android:ems="10"
         android:fontFamily="@font/inter_regular"
-        android:hint="@string/login"
+        android:hint="@string/email"
         android:importantForAutofill="no"
         android:maxLength="16"
         android:minHeight="48dp"

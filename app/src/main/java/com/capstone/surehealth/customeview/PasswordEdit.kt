@@ -9,6 +9,8 @@ import androidx.appcompat.widget.AppCompatEditText
 
 
 class PasswordEdit: AppCompatEditText {
+
+    private val limit  = 6
     constructor(context: Context) : super(context) {
         init()
     }
@@ -26,7 +28,7 @@ class PasswordEdit: AppCompatEditText {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if (text!!.length <=5){
+                if (s.toString().isNotEmpty() && s.toString().length < limit){
                     error = "Must be more than 6 Character"
                 }
             }

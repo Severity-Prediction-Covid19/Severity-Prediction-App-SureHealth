@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">SureHealth</string>
-<!--    a-->
+    <!--    a-->
     <string name="beranda">Beranda</string>
     <string name="deskripsi">Silahkan lakukan test untuk mengetahui apa yang sedang kamu alami</string>
     <string name="pertanyaan">Ingin mencari tahu hasil gejala mu?</string>
@@ -38,13 +38,25 @@
     <string name="app_logo">App Logo</string>
 
 
-<!--    b-->
-    <string name="login">Email</string>
+    <!--    b-->
+    <string name="login">Masuk</string>
     <string name="text_login2">Masukkan Email dan Password Anda!</string>
     <string name="imagelogin">ImageLogin</string>
     <string name="register_text">Belum memiliki akun?</string>
     <string name="register_intent">Buat Akun</string>
     <string name="text_login">Masuk</string>
     <string name="password">Password</string>
-    <string name="register">Register</string>
+    <string name="register">Buat Akun</string>
+    <string name="confirmpassword">Konfirmasi Password</string>
+    <string name="name">Nama</string>
+    <string name="text_regis">Buat Akun</string>
+    <string name="text_regis2">Buat akun baru dengan mengisi informasi dibawah ini</string>
+    <string name="loginintent_text">Sudah memiliki akun?</string>
+    <string name="login_intent">Masuk</string>
+    <string name="fill_name">Isikan nama anda</string>
+    <string name="fill_email">Isikan email anda</string>
+    <string name="fill_password">Isi password dengan benar</string>
+    <string name="password_less">Password kurang dari 6 karakter</string>
+    <string name="same_password">Password tidak sama</string>
+    <string name="email">Email</string>
 </resources>
