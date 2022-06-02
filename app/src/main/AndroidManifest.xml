@@ -14,18 +14,14 @@
         tools:targetApi="m">
 
         <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.login.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".ui.main.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.main.NavigationActivity"
             android:exported="false"
-            android:label="@string/title_activity_navigation"
             android:theme="@style/Theme.SureHealth.NoActionBar" />
         <activity
             android:name=".ui.result.ResultActivity"
