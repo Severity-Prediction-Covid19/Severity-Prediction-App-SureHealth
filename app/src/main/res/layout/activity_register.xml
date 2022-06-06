@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="@+id/RegisButton"
         app:layout_constraintTop_toTopOf="@+id/tvintentLogin" />
 
-   <com.capstone.surehealth.customeview.EmailEdit
+   <com.capstone.surehealth.ui.customview.EmailEdit
         android:id="@+id/emailedit"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="350dp"
@@ -93,7 +93,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameedit" />
 
-    <com.capstone.surehealth.customeview.RegisterButton
+    <com.capstone.surehealth.ui.customview.RegisterButton
         android:id="@+id/RegisButton"
         android:layout_width="350dp"
         android:layout_height="41dp"

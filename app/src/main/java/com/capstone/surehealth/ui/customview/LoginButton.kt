@@ -1,4 +1,4 @@
-package com.capstone.surehealth.customeview
+package com.capstone.surehealth.ui.customview
 
 import android.content.Context
 import android.graphics.Canvas
@@ -10,7 +10,7 @@ import androidx.core.content.ContextCompat
 import com.capstone.surehealth.R
 
 
-class RegisterButton : AppCompatButton {
+class LoginButton : AppCompatButton {
     private lateinit var enabledBackground: Drawable
     private var txtColor: Int = 0
 
@@ -33,7 +33,7 @@ class RegisterButton : AppCompatButton {
         setTextColor(txtColor)
         textSize = 16f
         gravity = Gravity.CENTER
-        text = context.getString(R.string.register)
+        text = context.getString(R.string.login)
     }
 
     private fun init() {

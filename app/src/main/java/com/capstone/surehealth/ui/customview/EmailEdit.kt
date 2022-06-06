@@ -1,4 +1,4 @@
-package com.capstone.surehealth.customeview
+package com.capstone.surehealth.ui.customview
 
 import android.content.Context
 import android.text.Editable
