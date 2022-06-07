@@ -4,8 +4,8 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.capstone.surehealth.api.ApiConfig
-import com.capstone.surehealth.api.RegisterResponse
+import com.capstone.surehealth.data.retrofit.ApiConfig
+import com.capstone.surehealth.data.response.RegisterResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

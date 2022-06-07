@@ -1,8 +1,18 @@
 package com.capstone.surehealth.data.response
 
+import com.google.gson.annotations.SerializedName
+
 data class LoginResponse(
-    val success: String,
-    val userId: String,
-    val userName: String,
-    val message: String
+
+	@field:SerializedName("success")
+	val success: Boolean,
+
+	@field:SerializedName("userName")
+	val userName: String,
+
+	@field:SerializedName("message")
+	val message: String,
+
+	@field:SerializedName("userId")
+	val userId: String
 )
