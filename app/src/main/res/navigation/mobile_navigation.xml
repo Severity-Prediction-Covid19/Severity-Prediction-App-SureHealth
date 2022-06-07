@@ -3,23 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/home_activity">
 
-    <fragment
-        android:id="@+id/nav_home"
-        android:name="com.capstone.surehealth.ui.main.ui.home.HomeFragment"
+    <activity
+        android:id="@+id/nav_tes"
+        android:name="com.capstone.surehealth.ui.quiz.QuizActivity"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/activity_quiz" />
 
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.capstone.surehealth.ui.main.ui.gallery.GalleryFragment"
+    <activity
+        android:id="@+id/nav_riwayat"
+        android:name="com.capstone.surehealth.ui.history.HistoryActivity"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.capstone.surehealth.ui.main.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/activity_history" />
 </navigation>

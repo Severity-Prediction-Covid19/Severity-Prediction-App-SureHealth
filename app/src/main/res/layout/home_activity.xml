@@ -197,7 +197,6 @@
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStarOf="@+id/tv_tes"
                 app:layout_constraintStart_toStartOf="@+id/tv_tes"
                 app:layout_constraintTop_toBottomOf="@+id/tv_tes" />
 
