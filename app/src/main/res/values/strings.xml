@@ -61,6 +61,7 @@
     <string name="email">Email</string>
     <string name="mulai_test">Mulai Test</string>
     <string name="deskripsi_tes">Jawab pertanyaan untuk mendapatkan hasil dari gejala yang dialami</string>
-    <string name="riwayat_tes">Riwayat Tes</string>
     <string name="deskripsi_riwayat">Hasil dari test yang pernah dilakukan sebelumnya</string>
+    <string name="email_already">Email has been registered. Registration failed</string>
+    <string name="register_success">Registration succeed</string>
 </resources>
