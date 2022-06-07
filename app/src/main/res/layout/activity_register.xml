@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.login.RegisterActivity">
 
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/kembali"
+        android:src="@drawable/ic_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        app:tint="@color/dark_green" />
+
     <ImageView
         android:id="@+id/ivRegis"
         android:layout_width="242dp"
@@ -78,11 +92,10 @@
         android:background="@drawable/et_custom"
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="12dp"
-        android:ems="10"
         android:fontFamily="@font/inter_regular"
         android:hint="@string/email"
         android:importantForAutofill="no"
-        android:maxLength="16"
+        android:maxLength="26"
         android:minHeight="48dp"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"

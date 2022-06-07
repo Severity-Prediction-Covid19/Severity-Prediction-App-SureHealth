@@ -8,6 +8,19 @@
 
 
     <ImageView
+        android:id="@+id/ivBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/kembali"
+        android:src="@drawable/ic_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        app:tint="@color/dark_green" />
+
+    <ImageView
         android:id="@+id/ivLogin"
         android:layout_width="242dp"
         android:layout_height="171dp"

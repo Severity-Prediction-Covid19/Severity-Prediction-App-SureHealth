@@ -1,5 +1,6 @@
 package com.capstone.surehealth.ui.login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.capstone.surehealth.R
@@ -12,5 +13,14 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.tvRegister.setOnClickListener {
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+        binding.ivBack2.setOnClickListener {
+            val intent = Intent(this@LoginActivity, OnboardingActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
