@@ -10,6 +10,7 @@ import com.capstone.surehealth.R
 import com.capstone.surehealth.ui.login.LoginActivity
 import com.capstone.surehealth.ui.login.OnboardingActivity
 import com.capstone.surehealth.ui.main.MainActivity
+import com.capstone.surehealth.ui.result.ResultActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
