@@ -59,6 +59,7 @@
                 android:layout_height="32dp"
                 android:layout_marginStart="16dp"
                 android:src="@drawable/circle"
+                android:tint="@color/light_yellow"
                 app:layout_constraintStart_toEndOf="@+id/page_1"
                 app:layout_constraintTop_toTopOf="@+id/page_1"
                 android:contentDescription="@string/second_page" />
@@ -100,13 +101,13 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/questionOne"
+            android:id="@+id/questionSeven"
             style="@style/Margin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/inter_bold"
-            android:text="@string/question_one"
+            android:text="@string/question_seven"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -122,7 +123,7 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/questionOne">
+            app:layout_constraintTop_toBottomOf="@id/questionSeven">
 
             <RadioButton
                 android:id="@+id/rbOne1"
@@ -147,13 +148,13 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/questionTwo"
+            android:id="@+id/questionEight"
             style="@style/Margin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/inter_bold"
-            android:text="@string/question_two"
+            android:text="@string/question_eight"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -169,7 +170,7 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/questionTwo">
+            app:layout_constraintTop_toBottomOf="@id/questionEight">
 
             <RadioButton
                 android:id="@+id/rbScaleOne"
@@ -230,13 +231,13 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/questionThree"
+            android:id="@+id/questionNine"
             style="@style/Margin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/inter_bold"
-            android:text="@string/question_three"
+            android:text="@string/question_nine"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -252,7 +253,7 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/questionThree">
+            app:layout_constraintTop_toBottomOf="@id/questionNine">
 
             <RadioButton
                 android:id="@+id/rbOne2"
@@ -283,7 +284,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/inter_bold"
-            android:text="@string/question_four"
+            android:text="@string/question_ten"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -300,6 +301,100 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/questionFour">
+
+            <RadioButton
+                android:id="@+id/rbOne3"
+                android:layout_width="170dp"
+                android:layout_height="32dp"
+                android:background="@drawable/radio_btn_bg"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/ya"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rbTwo3"
+                android:layout_width="170dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/radio_btn_bg"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/tidak"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionFive"
+            style="@style/Margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/question_eleven"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgFour"/>
+
+        <RadioGroup
+            android:id="@+id/rgFive"
+            style="@style/Margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/questionFive">
+
+            <RadioButton
+                android:id="@+id/rbOne4"
+                android:layout_width="170dp"
+                android:layout_height="32dp"
+                android:background="@drawable/radio_btn_bg"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/ya"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rbTwo4"
+                android:layout_width="170dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/radio_btn_bg"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/tidak"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionTwelve"
+            style="@style/Margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/question_twelve"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgFive"/>
+
+        <RadioGroup
+            android:id="@+id/rgSix"
+            style="@style/Margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/questionTwelve">
 
             <RadioButton
                 android:id="@+id/rbScaleOne2"
@@ -356,100 +451,6 @@
                 android:backgroundTint="@color/gray"
                 android:fontFamily="@font/inter_regular"
                 android:text="@string/scale_three"
-                android:textSize="12sp" />
-        </RadioGroup>
-
-        <TextView
-            android:id="@+id/questionFive"
-            style="@style/Margin"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/inter_bold"
-            android:text="@string/question_five"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rgFour"/>
-
-        <RadioGroup
-            android:id="@+id/rgFive"
-            style="@style/Margin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/questionFive">
-
-            <RadioButton
-                android:id="@+id/rbOne3"
-                android:layout_width="170dp"
-                android:layout_height="32dp"
-                android:background="@drawable/radio_btn_bg"
-                android:backgroundTint="@color/gray"
-                android:fontFamily="@font/inter_regular"
-                android:text="@string/ya"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/rbTwo3"
-                android:layout_width="170dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="20dp"
-                android:background="@drawable/radio_btn_bg"
-                android:backgroundTint="@color/gray"
-                android:fontFamily="@font/inter_regular"
-                android:text="@string/tidak"
-                android:textSize="12sp" />
-        </RadioGroup>
-
-        <TextView
-            android:id="@+id/questionSix"
-            style="@style/Margin"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/inter_bold"
-            android:text="@string/question_six"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rgFive"/>
-
-        <RadioGroup
-            android:id="@+id/rgSix"
-            style="@style/Margin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/questionSix">
-
-            <RadioButton
-                android:id="@+id/rbOne4"
-                android:layout_width="170dp"
-                android:layout_height="32dp"
-                android:background="@drawable/radio_btn_bg"
-                android:backgroundTint="@color/gray"
-                android:fontFamily="@font/inter_regular"
-                android:text="@string/ya"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/rbTwo4"
-                android:layout_width="170dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="20dp"
-                android:background="@drawable/radio_btn_bg"
-                android:backgroundTint="@color/gray"
-                android:fontFamily="@font/inter_regular"
-                android:text="@string/tidak"
                 android:textSize="12sp" />
         </RadioGroup>
 

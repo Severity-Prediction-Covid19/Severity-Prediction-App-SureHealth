@@ -16,6 +16,7 @@ import androidx.lifecycle.viewModelScope
 import com.capstone.surehealth.R
 import com.capstone.surehealth.data.model.User
 import com.capstone.surehealth.data.model.UserPreference
+import com.capstone.surehealth.data.response.Data
 import com.capstone.surehealth.databinding.ActivityMainBinding
 import com.capstone.surehealth.ui.history.HistoryActivity
 import com.capstone.surehealth.ui.login.OnboardingActivity
@@ -30,6 +31,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var userPreference: UserPreference
+
+    private lateinit var data: Data
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -21,8 +21,8 @@ class EditProfileActivity : AppCompatActivity() {
         viewModel.getProfile().observe(this) {
             if(it != null) {
                 binding.apply {
-                    etNama.text = it.username
-                    etEmail.text = it.email
+//                    etNama.text = it.username
+//                    etEmail.text = it.email
                 }
             }
         }

@@ -14,7 +14,7 @@
     <string name="tingkat_keparahan">Tingkat Keparahan</string>
     <string name="hapus">Hapus</string>
     <string name="riwayat">Riwayat</string>
-    <string name="pertanyaan_1">Apakah Anda mengalami demam?</string>
+
     <string name="kembali">Kembali</string>
     <string name="foto_profil">Foto Profil</string>
     <string name="edit_profil">Edit Profil</string>
@@ -37,6 +37,26 @@
     <string name="keluar">Keluar</string>
     <string name="app_logo">App Logo</string>
 
+    <!-- Pertanyaan -->
+    <string name="question_one">Apakah Anda mengalami demam?</string>
+    <string name="question_two">Seberapa sering Anda merasakan lelah?</string>
+    <string name="question_three">Apakah Anda merasakan batuk kering?</string>
+    <string name="question_four">Seberapa sering Anda batuk?</string>
+    <string name="question_five">Apakah Anda mengalami sesak nafas?</string>
+    <string name="question_six">Apakah Anda merasakan tenggorokan kering?</string>
+    <string name="question_seven">Apakah Anda tidak meraskana gejala apapun?</string>
+    <string name="question_eight">Seberapa sering Anda merasakan sakit?</string>
+    <string name="question_nine">Apakah Anda merasakan hidung tersumbat?</string>
+    <string name="question_ten">Apakah Anda merasakan pilek?</string>
+    <string name="question_eleven">Apakah Anda merasakan diare?</string>
+    <string name="question_twelve">Seberapa sering Anda melakukan buang air besar?</string>
+
+    <!-- Skala Jawaban -->
+    <string name="scale_one">Tidak pernah</string>
+    <string name="scale_two">Jarang</string>
+    <string name="scale_three">Kadang-kadang</string>
+    <string name="scale_four">Cukup sering</string>
+    <string name="scale_five">Sangat Sering</string>
 
     <!--    b-->
     <string name="login">Masuk</string>
@@ -73,4 +93,11 @@
     <string name="hapus_akun">Hapus Akun</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ya">Ya</string>
+    <string name="tidak">Tidak</string>
+    <string name="first_page">Halaman Pertama</string>
+    <string name="second_page">Halaman Kedua</string>
+    <string name="warning">Peringatan</string>
+    <string name="next">Lanjut</string>
+    <string name="back">Kembali</string>
 </resources>

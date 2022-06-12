@@ -15,32 +15,32 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
 
-        <activity
-            android:name=".ui.login.OnboardingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"
-            android:theme="@style/Theme.SureHealth.NoActionBar"/>
-        <activity
-            android:name=".ui.login.RegisterActivity"
-            android:exported="false"
-            android:theme="@style/Theme.SureHealth.NoActionBar"/>
-        <activity
-            android:name=".ui.main.MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.SureHealth.NoActionBar" />
-        <activity
-            android:name=".ui.result.ResultActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.history.HistoryActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".ui.login.OnboardingActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".ui.login.LoginActivity"-->
+<!--            android:exported="false"-->
+<!--            android:theme="@style/Theme.SureHealth.NoActionBar"/>-->
+<!--        <activity-->
+<!--            android:name=".ui.login.RegisterActivity"-->
+<!--            android:exported="false"-->
+<!--            android:theme="@style/Theme.SureHealth.NoActionBar"/>-->
+<!--        <activity-->
+<!--            android:name=".ui.main.MainActivity"-->
+<!--            android:exported="false"-->
+<!--            android:theme="@style/Theme.SureHealth.NoActionBar" />-->
+<!--        <activity-->
+<!--            android:name=".ui.result.ResultActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".ui.history.HistoryActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".ui.quiz.QuizActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".ui.quiz.QuizActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
