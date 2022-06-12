@@ -23,7 +23,7 @@
             android:background="@color/white">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/btnNavigation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_menu_24"
@@ -34,7 +34,7 @@
                 android:contentDescription="@string/kembali" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/tvBeranda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -49,7 +49,7 @@
 
     <androidx.cardview.widget.CardView
         style="@style/Margin"
-        android:id="@+id/cv_profil"
+        android:id="@+id/cvProfil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -72,11 +72,11 @@
                 android:layout_height="64dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@tools:sample/avatars"
+                android:src="@drawable/default_profile"
                 android:contentDescription="@string/foto_profil" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tvGreeting"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -85,12 +85,12 @@
                 android:text="@string/salam"
                 android:textSize="14sp"
                 android:textColor="@color/black"
-                app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                app:layout_constraintEnd_toStartOf="@+id/btnEditProfil"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/tvNama"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -99,12 +99,12 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                app:layout_constraintEnd_toStartOf="@+id/imageView6"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintEnd_toStartOf="@+id/btnEditProfil"
+                app:layout_constraintStart_toStartOf="@+id/tvGreeting"
+                app:layout_constraintTop_toBottomOf="@+id/tvGreeting" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/btnEditProfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -130,7 +130,7 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_profil" />
+        app:layout_constraintTop_toBottomOf="@+id/cvProfil" />
 
     <TextView
         style="@style/Margin"
@@ -172,8 +172,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/ic_assignment_24"
-                app:tint="@color/black" />
+                android:src="@drawable/ic_assignment_24"
+                app:tint="@color/dark_green" />
 
             <TextView
                 android:id="@+id/tv_tes"
@@ -231,8 +231,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/ic_history_24"
-                app:tint="@color/black" />
+                android:src="@drawable/ic_history_24"
+                app:tint="@color/dark_green" />
 
             <TextView
                 android:id="@+id/tv_riwayat"
@@ -256,7 +256,6 @@
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStarOf="@+id/tv_riwayat"
                 app:layout_constraintStart_toStartOf="@+id/tv_riwayat"
                 app:layout_constraintTop_toBottomOf="@+id/tv_riwayat" />
 

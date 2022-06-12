@@ -1,6 +1,7 @@
 package com.capstone.surehealth.data.retrofit
 
 
+import com.capstone.surehealth.data.response.Data
 import com.capstone.surehealth.data.response.LoginResponse
 import com.capstone.surehealth.data.response.RegisterResponse
 import retrofit2.Call
@@ -23,6 +24,10 @@ interface ApiService {
         @Field("password") password: String
     ): Call<RegisterResponse>
 
+    @GET("/user/:id")
+    fun getProfile(
+        @Field("id_user") id_user: String
+    ): Call<Data>
 
 }
 

@@ -68,4 +68,7 @@
     <string name="descakhir">Sudah memiliki akun?</string>
     <string name="imgOnboard">image onboarding</string>
     <string name="not_register">Maaf akun anda tidak terdaftrar</string>
+    <string name="ubah_profil">Ubah Profil</string>
+    <string name="simpan">Simpan</string>
+    <string name="hapus_akun">Hapus Akun</string>
 </resources>
