@@ -67,4 +67,7 @@
     <string name="descawal">Pastikan gejala yang sedang kamu alami dengan \n SureHealth</string>
     <string name="descakhir">Sudah memiliki akun?</string>
     <string name="imgOnboard">image onboarding</string>
+    <string name="ubah_profil">Ubah Profil</string>
+    <string name="simpan">Simpan</string>
+    <string name="hapus_akun">Hapus Akun</string>
 </resources>

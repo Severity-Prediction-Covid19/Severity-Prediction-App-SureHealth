@@ -15,9 +15,12 @@ import androidx.cardview.widget.CardView
 import com.capstone.surehealth.R
 import com.capstone.surehealth.data.model.User
 import com.capstone.surehealth.data.model.UserPreferences
+import com.capstone.surehealth.data.response.Data
+import com.capstone.surehealth.data.response.RegisterResponse
 import com.capstone.surehealth.databinding.ActivityMainBinding
 import com.capstone.surehealth.ui.history.HistoryActivity
 import com.capstone.surehealth.ui.login.OnboardingActivity
+import com.capstone.surehealth.ui.profile.EditProfileActivity
 import com.capstone.surehealth.ui.quiz.QuizActivity
 
 class MainActivity : AppCompatActivity() {
@@ -27,18 +30,23 @@ class MainActivity : AppCompatActivity() {
     private lateinit var userModel: User
     private lateinit var userPreferences: UserPreferences
 
+    private lateinit var data: Data
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        setSupportActionBar(binding.appBarNavigation.toolbar)
+//        setSupportActionBar(binding.homeActivity.toolbar)
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+        binding.homeActivity.btnNavigation.setOnClickListener {
+            drawerLayout.openDrawer(navView)
+        }
+
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_tes, R.id.nav_riwayat
@@ -58,14 +66,21 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, HistoryActivity::class.java)
             startActivity(intent)
         }
+
+        binding.homeActivity.btnEditProfil.setOnClickListener {
+            val intent = Intent(this, EditProfileActivity::class.java)
+            intent.putExtra(EditProfileActivity.EXTRA_ID, data.idUser)
+            startActivity(intent)
+        }
 //        setupActionBarWithNavController(navController, appBarConfiguration)
 //        navView.setupWithNavController(navController)
     }
 
+
     private fun logout() {
         userModel.id_user = ""
         userPreferences.setUsers(userModel)
-        startActivity(Intent(this, OnboardingActivity::class.java)
+//        startActivity(Intent(this, OnboardingActivity::class.java)
     }
 
 //    override fun onSupportNavigateUp(): Boolean {
