@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var userModel: User
     private lateinit var userPreferences: UserPreferences
+    private lateinit var data: Data
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,13 +30,17 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        setSupportActionBar(binding.appBarNavigation.toolbar)
+//        setSupportActionBar(binding.homeActivity.toolbar)
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
 //        val navController = findNavController(R.id.nav_host_fragment_content_navigation)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+        binding.homeActivity.btnNavigation.setOnClickListener {
+            drawerLayout.openDrawer(navView)
+        }
+
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
