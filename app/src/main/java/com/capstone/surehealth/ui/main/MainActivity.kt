@@ -12,28 +12,28 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import androidx.lifecycle.viewModelScope
 import com.capstone.surehealth.R
 import com.capstone.surehealth.data.model.User
-import com.capstone.surehealth.data.model.UserPreferences
-import com.capstone.surehealth.data.response.Data
-import com.capstone.surehealth.data.response.RegisterResponse
+import com.capstone.surehealth.data.model.UserPreference
 import com.capstone.surehealth.databinding.ActivityMainBinding
 import com.capstone.surehealth.ui.history.HistoryActivity
 import com.capstone.surehealth.ui.login.OnboardingActivity
 import com.capstone.surehealth.ui.profile.EditProfileActivity
 import com.capstone.surehealth.ui.quiz.QuizActivity
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-    private lateinit var userModel: User
-    private lateinit var userPreferences: UserPreferences
-
-    private lateinit var data: Data
+    private lateinit var userPreference: UserPreference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         binding.navKeluar.setOnClickListener {
+            startActivity(Intent(this, OnboardingActivity::class.java))
             logout()
         }
 
@@ -75,11 +76,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun logout() {
-        userModel.id_user = ""
-        userPreferences.setUsers(userModel)
-//        startActivity(Intent(this, OnboardingActivity::class.java)
-    }
 
     private fun getName(data: Data) {
         binding.apply {
@@ -91,4 +87,11 @@ class MainActivity : AppCompatActivity() {
 //        val navController = findNavController(R.id.nav_host_fragment_content_navigation)
 //        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
 //    }
+
+   private fun logout() = CoroutineScope(Dispatchers.Main).launch{
+        userPreference.logouttoken()
+    }
+
+
+
 }

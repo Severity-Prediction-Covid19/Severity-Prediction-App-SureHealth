@@ -1,7 +1,10 @@
 package com.capstone.surehealth.ui.login
 
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -29,25 +32,31 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        playAnimation()
         setupAction()
         setupViewModel()
 
-        }
+
+    }
 
     private fun setupAction() {
         binding.RegisButton.setOnClickListener {
             registerAction()
             registerViewModel.getRegister().observe(this) {
                 if (it.success == false) {
-//                    showLoading(false)
+                    showLoading(false)
                     Toast.makeText(
                         this@RegisterActivity,
                         getString(R.string.email_already),
                         Toast.LENGTH_SHORT
                     ).show()
                 } else {
-//                    showLoading(false)
-                    Toast.makeText(this@RegisterActivity, getString(R.string.register_success), Toast.LENGTH_SHORT).show()
+                    showLoading(false)
+                    Toast.makeText(
+                        this@RegisterActivity,
+                        getString(R.string.register_success),
+                        Toast.LENGTH_SHORT
+                    ).show()
                     val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                     startActivity(intent)
                 }
@@ -57,6 +66,7 @@ class RegisterActivity : AppCompatActivity() {
 
 
     private fun setupViewModel() {
+        showLoading(false)
         registerViewModel = ViewModelProvider(
             this, ViewModelProvider.NewInstanceFactory()
         )[RegisterViewModel::class.java]
@@ -100,10 +110,51 @@ class RegisterActivity : AppCompatActivity() {
                 binding.passwordEdit.error = getString(R.string.fill_password)
             }
             else -> {
-//                showLoading(true)
+                showLoading(true)
                 registerViewModel.setRegister(username, email, password)
             }
         }
     }
+    private fun playAnimation(){
+        val imageView = ObjectAnimator.ofFloat(binding.ivRegis, View.ALPHA, 1f).setDuration(3000)
+        val textRegis = ObjectAnimator.ofFloat(binding.tvRegis, View.ALPHA, 1f).setDuration(3000)
+        val textRegis2 = ObjectAnimator.ofFloat(binding.tvRegis2, View.ALPHA, 1f).setDuration(3000)
+        val email = ObjectAnimator.ofFloat(binding.emailedit, View.ALPHA, 1f).setDuration(3000)
+        val password = ObjectAnimator.ofFloat(binding.passwordEdit, View.ALPHA, 1f).setDuration(3000)
+        val btnRegis = ObjectAnimator.ofFloat(binding.RegisButton, View.ALPHA, 1f).setDuration(3000)
+        val intentRegis= ObjectAnimator.ofFloat(binding.tvintentLogin, View.ALPHA, 1f).setDuration(1000)
+        val intentRegis2= ObjectAnimator.ofFloat(binding.tvintentLogin2, View.ALPHA, 1f).setDuration(1000)
+
+        val title = AnimatorSet().apply {
+            playTogether(imageView, textRegis, textRegis2)
+        }
+
+        val content = AnimatorSet().apply {
+            playTogether(email, password, btnRegis)
+        }
+
+        ObjectAnimator.ofFloat(binding.ivRegis, View.TRANSLATION_Y, -30f, 30f).apply {
+            duration = 4000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }.start()
+
+        AnimatorSet().apply {
+            playSequentially(title, content, intentRegis,intentRegis2)
+            start()
+        }
+  }
+
+
+    private fun showLoading(state: Boolean){
+        if(state){
+            binding.progressBar.visibility = View.VISIBLE
+        }else{
+            binding.progressBar.visibility = View.GONE
+        }
+    }
+
+
+
 
 }

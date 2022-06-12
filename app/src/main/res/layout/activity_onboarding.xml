@@ -10,7 +10,7 @@
     <Button
         android:id="@+id/RegisOButton"
         android:layout_width="350dp"
-        android:layout_height="51dp"
+        android:layout_height="54dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="37dp"
         android:layout_marginEnd="31dp"
