@@ -14,7 +14,6 @@ import com.capstone.surehealth.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity() {
 
-
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var registerViewModel: RegisterViewModel
 

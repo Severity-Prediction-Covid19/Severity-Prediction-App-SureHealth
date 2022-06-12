@@ -8,6 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class ApiConfig {
     companion object{
         private const val BASEURL = "https://ferrous-pact-351609.et.r.appspot.com"
+
         fun getApi() : ApiService {
             val loggingInterceptor =
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
