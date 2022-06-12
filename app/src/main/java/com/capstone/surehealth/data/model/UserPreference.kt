@@ -33,7 +33,7 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
             User( id_user = userid,state = state)
         }
 
-    suspend fun logout() {
+    suspend fun logouttoken() {
         dataStore.edit {
             it.clear()
         }
