@@ -24,16 +24,24 @@
         android:id="@+id/ivLogin"
         android:layout_width="242dp"
         android:layout_height="171dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginBottom="85dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvLogin"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="85dp"
+        android:contentDescription="@string/imagelogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305"
-        app:srcCompat="@drawable/imglogin"
-        android:contentDescription="@string/imagelogin" />
+        app:srcCompat="@drawable/imglogin" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvRegister2"
@@ -94,7 +102,7 @@
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/et_custom"
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="12dp"
@@ -102,7 +110,7 @@
         android:fontFamily="@font/inter_regular"
         android:hint="@string/email"
         android:importantForAutofill="no"
-        android:maxLength="16"
+        android:maxLength="26"
         android:minHeight="48dp"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
@@ -150,6 +158,5 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailedit" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
