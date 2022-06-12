@@ -133,7 +133,7 @@ class RegisterActivity : AppCompatActivity() {
             playTogether(email, password, btnRegis)
         }
 
-        ObjectAnimator.ofFloat(binding.ivRegis, View.TRANSLATION_Y, -30f, 30f).apply {
+        ObjectAnimator.ofFloat(binding.ivRegis, View.TRANSLATION_X, -30f, 30f).apply {
             duration = 4000
             repeatCount = ObjectAnimator.INFINITE
             repeatMode = ObjectAnimator.REVERSE

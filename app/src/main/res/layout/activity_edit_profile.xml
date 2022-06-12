@@ -22,7 +22,7 @@
             android:minHeight="?attr/actionBarSize">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/ivback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/kembali"
@@ -136,14 +136,13 @@
         style="@style/Margin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="58dp"
         android:backgroundTint="@color/red"
         android:text="@string/hapus_akun"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSimpan"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailedit" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnSimpan"
@@ -156,7 +155,7 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

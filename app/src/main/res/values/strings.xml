@@ -14,7 +14,7 @@
     <string name="tingkat_keparahan">Tingkat Keparahan</string>
     <string name="hapus">Hapus</string>
     <string name="riwayat">Riwayat</string>
-
+    <string name="pertanyaan_1">Apakah Anda mengalami demam?</string>
     <string name="kembali">Kembali</string>
     <string name="foto_profil">Foto Profil</string>
     <string name="edit_profil">Edit Profil</string>
@@ -93,6 +93,19 @@
     <string name="hapus_akun">Hapus Akun</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="greeting">tes</string>
+    <string name="tvKeparahan">Tingkat keparahan gejala</string>
+    <string name="Pameter_keparahan">Ringan</string>
+    <string name="deskripsi_hasil">Deskripsi</string>
+    <string name="deskripsi_hasil2">Minum Obat 3x Sehari, Perbanyak Istirahat</string>
+    <string name="Rekomendasi_obat">Rekomendasi Obat</string>
+    <string name="Rekomendasi_obat2">Vitamin C, Paracetamol 500mg</string>
+    <string name="imghasil">image hasil</string>
+    <string name="hijau">parameter hijau</string>
+    <string name="kuning">parameter kuning</string>
+    <string name="merah">parameter merah</string>
+    <string name="panah">panah parameter</string>
+    <string name="lanjut">Lanjut</string>
     <string name="ya">Ya</string>
     <string name="tidak">Tidak</string>
     <string name="first_page">Halaman Pertama</string>

@@ -6,6 +6,268 @@
     android:layout_height="match_parent"
     tools:context=".ui.result.ResultActivity">
 
+
+    <Button
+        android:id="@+id/btnSimpan"
+        style="@style/Margin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/lanjut"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:contentDescription="@string/imghasil"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_tingkatkeparahan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/imghasil" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_tingkatkeparahan"
+        style="@style/Margin"
+        android:layout_width="315dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="174dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/cv_rekomendasiobat"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <ImageView
+                android:id="@+id/ivhijau"
+                android:layout_width="75dp"
+                android:layout_height="11dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/hijau"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/parameterhijau" />
+
+            <ImageView
+                android:id="@+id/ivkuning"
+                android:layout_width="75dp"
+                android:layout_height="11dp"
+                android:layout_marginStart="74dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/kuning"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivmerah"
+                app:layout_constraintStart_toStartOf="@+id/ivhijau"
+                app:srcCompat="@drawable/parameterkuning" />
+
+            <ImageView
+                android:id="@+id/ivmerah"
+                android:layout_width="75dp"
+                android:layout_height="11dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/merah"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/parametermerah" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/panah"
+                app:layout_constraintEnd_toEndOf="@+id/ivmerah"
+                app:layout_constraintHorizontal_bias="0.159"
+                app:layout_constraintStart_toStartOf="@+id/ivhijau"
+                app:layout_constraintTop_toTopOf="@+id/tvKeparahan2"
+                app:srcCompat="@drawable/imgpanahhasil" />
+
+            <TextView
+                android:id="@+id/tvKeparahan"
+                android:layout_width="149dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="82dp"
+                android:layout_marginEnd="83dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/tvKeparahan"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvKeparahan2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.258"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvKeparahan2"
+                android:layout_width="62dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="118dp"
+                android:layout_marginEnd="118dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/Pameter_keparahan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/ivkuning"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.133"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_rekomendasiobat"
+        style="@style/Margin"
+        android:layout_width="383dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="9dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_tingkatkeparahan">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            tools:layout_editor_absoluteX="32dp">
+
+            <ImageView
+                android:id="@+id/iv_sick"
+                android:layout_width="94dp"
+                android:layout_height="84dp"
+                android:contentDescription="@string/mulai_test"
+                android:src="@drawable/ic_sick"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/tvDrug"
+                android:layout_width="151dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="192dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/Rekomendasi_obat"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintStart_toEndOf="@+id/iv_sick"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_deskripsi_hasil"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="48dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="@string/Rekomendasi_obat2"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/iv_sick" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_deskripsihasil"
+        style="@style/Margin"
+        android:layout_width="383dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="44dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cv_rekomendasiobat">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            tools:layout_editor_absoluteX="32dp">
+
+            <ImageView
+                android:id="@+id/iv_deskripsi"
+                android:layout_width="94dp"
+                android:layout_height="84dp"
+                android:contentDescription="@string/mulai_test"
+                android:src="@drawable/ic_baseline_mood_bad_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/tv_deskripsi"
+                android:layout_width="71dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="101dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/deskripsi_hasil"
+                android:textColor="@color/green_font"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_deskripsi2"
+                app:layout_constraintStart_toStartOf="@+id/iv_deskripsi"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_deskripsi2"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="48dp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="@string/deskripsi_hasil2"
+                android:textColor="@color/green_font"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/iv_deskripsi" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -18,19 +280,19 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="?attr/actionBarSize"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize">
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/kembali"
                 android:src="@drawable/ic_back_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:tint="@color/dark_green"
-                android:contentDescription="@string/kembali" />
+                app:tint="@color/dark_green" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -45,4 +307,5 @@
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
