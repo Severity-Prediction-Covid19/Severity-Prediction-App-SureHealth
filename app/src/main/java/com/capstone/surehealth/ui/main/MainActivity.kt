@@ -19,6 +19,7 @@ import com.capstone.surehealth.data.model.UserPreference
 import com.capstone.surehealth.data.response.Data
 import com.capstone.surehealth.databinding.ActivityMainBinding
 import com.capstone.surehealth.ui.history.HistoryActivity
+import com.capstone.surehealth.ui.login.LoginViewModel
 import com.capstone.surehealth.ui.login.OnboardingActivity
 import com.capstone.surehealth.ui.profile.EditProfileActivity
 import com.capstone.surehealth.ui.quiz.QuizActivity
@@ -42,8 +43,6 @@ class MainActivity : AppCompatActivity() {
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
         binding.homeActivity.btnNavigation.setOnClickListener {
             drawerLayout.openDrawer(navView)
         }
@@ -58,8 +57,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, OnboardingActivity::class.java))
             logout()
         }
-
-        getName(data)
 
         binding.homeActivity.cvTes.setOnClickListener{
             val intent = Intent(this, QuizActivity::class.java)
@@ -78,23 +75,17 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
-
     private fun getName(data: Data) {
         binding.apply {
             homeActivity.tvNama.text = data.username
         }
     }
 
-//    override fun onSupportNavigateUp(): Boolean {
-//        val navController = findNavController(R.id.nav_host_fragment_content_navigation)
-//        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
-//    }
-
-   private fun logout() = CoroutineScope(Dispatchers.Main).launch{
-        userPreference.logouttoken()
+    private fun logout() {
+        CoroutineScope(Dispatchers.Main).launch {
+            userPreference.logoutToken()
+        }
+        startActivity(Intent(this, OnboardingActivity::class.java))
     }
-
-
 
 }

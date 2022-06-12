@@ -12,10 +12,8 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
 
     suspend fun saveidToken(user: User) {
         dataStore.edit { preferences ->
-
             preferences[ID_KEY] = user.id_user
             preferences[STATE_KEY] = user.state
-
         }
     }
 
@@ -33,7 +31,7 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
             User( id_user = userid,state = state)
         }
 
-    suspend fun logouttoken() {
+    suspend fun logoutToken() {
         dataStore.edit {
             it.clear()
         }

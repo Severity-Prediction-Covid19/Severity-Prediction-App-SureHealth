@@ -16,15 +16,16 @@ class OnboardingActivity : AppCompatActivity() {
         binding = ActivityOnboardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         binding.RegisOButton.setOnClickListener {
             val intent = Intent(this@OnboardingActivity, RegisterActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         binding.loginOButton.setOnClickListener {
             val intent = Intent(this@OnboardingActivity, LoginActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 

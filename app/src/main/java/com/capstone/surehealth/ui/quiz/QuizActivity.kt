@@ -41,12 +41,4 @@ class QuizActivity : AppCompatActivity() {
 
     }
 
-//    private fun loadFragment(fragment: Fragment) {
-//        val fm = supportFragmentManager
-//        val ft = fm.beginTransaction()
-//        ft.replace(R.id.fragmentContainer, fragment)
-//        ft.commit()
-//    }
-
-
 }
