@@ -14,18 +14,18 @@ class EditProfileActivity : AppCompatActivity() {
         binding = ActivityEditProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        val id = intent.getStringExtra(EXTRA_ID)
+        val id = intent.getStringExtra(EXTRA_ID)
+        val username = intent.getStringExtra(EXTRA_USERNAME)
 
-//        viewModel.setProfile(id.toString())
-//        viewModel.getProfile().observe(this) {
-//            if(it != null) {
-//                binding.apply {
-//                    etNama.text = it.username
-//                    etEmail.text = it.email
-//                }
-//            }
-//        }
-
+        viewModel.setProfile(id.toString())
+        viewModel.getProfile().observe(this) {
+            if(it != null) {
+                binding.apply {
+                    etNama.text = it.username
+                    etEmail.text = it.email
+                }
+            }
+        }
     }
 
     companion object {

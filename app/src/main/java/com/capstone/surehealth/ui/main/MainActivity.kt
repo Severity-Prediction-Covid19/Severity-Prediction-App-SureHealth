@@ -37,8 +37,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        setSupportActionBar(binding.homeActivity.toolbar)
-
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         // Passing each menu ID as a set of Ids because each
@@ -57,6 +55,8 @@ class MainActivity : AppCompatActivity() {
             logout()
         }
 
+        getName(data)
+
         binding.homeActivity.cvTes.setOnClickListener{
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
@@ -69,11 +69,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.homeActivity.btnEditProfil.setOnClickListener {
             val intent = Intent(this, EditProfileActivity::class.java)
-            intent.putExtra(EditProfileActivity.EXTRA_ID, data.idUser)
+            intent.putExtra(EditProfileActivity.EXTRA_USERNAME, data.username)
             startActivity(intent)
         }
-//        setupActionBarWithNavController(navController, appBarConfiguration)
-//        navView.setupWithNavController(navController)
     }
 
 
@@ -81,6 +79,12 @@ class MainActivity : AppCompatActivity() {
         userModel.id_user = ""
         userPreferences.setUsers(userModel)
 //        startActivity(Intent(this, OnboardingActivity::class.java)
+    }
+
+    private fun getName(data: Data) {
+        binding.apply {
+            homeActivity.tvNama.text = data.username
+        }
     }
 
 //    override fun onSupportNavigateUp(): Boolean {
