@@ -2,6 +2,6 @@
 
 
 
-#
+# About ->
 Severity-Prediction-App-SureHealth
-SureHealth: Aplikasi untuk memprediksi tingkat keparahan gejala COVID-19 yang dialami pengguna
+SureHealth: Application for predicting the severity of COVID-19 symptoms experienced by users
