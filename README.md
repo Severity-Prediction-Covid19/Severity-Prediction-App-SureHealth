@@ -10,6 +10,7 @@ SureHealth: Application for predicting the severity of COVID-19 symptoms experie
 Project is created with:
 *  Android Studio
 *  Android Jetpack 
+*  Kotlin
 *  Retrofit 
 *  Using API
 
