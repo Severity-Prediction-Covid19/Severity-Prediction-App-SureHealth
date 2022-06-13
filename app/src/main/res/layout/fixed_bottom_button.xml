@@ -44,5 +44,21 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <android.widget.Button
+            android:id="@+id/btnHasil"
+            style="@style/Margin"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/inter_bold"
+            android:visibility="gone"
+            android:text="@string/look_result"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

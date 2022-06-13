@@ -33,8 +33,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var userPreference: UserPreference
 
-    private lateinit var data: Data
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -70,7 +68,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.homeActivity.btnEditProfil.setOnClickListener {
             val intent = Intent(this, EditProfileActivity::class.java)
-            intent.putExtra(EditProfileActivity.EXTRA_USERNAME, data.username)
             startActivity(intent)
         }
     }

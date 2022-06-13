@@ -15,13 +15,14 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
 
-
         <activity
             android:name=".ui.profile.EditProfileActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.SureHealth.NoActionBar"/>
         <activity
             android:name=".ui.login.OnboardingActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.SureHealth.NoActionBar" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:exported="false"
@@ -40,10 +41,12 @@
             android:theme="@style/Theme.SureHealth.NoActionBar"/>
         <activity
             android:name=".ui.history.HistoryActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.SureHealth.NoActionBar"/>
         <activity
             android:name=".ui.quiz.QuizActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.SureHealth.NoActionBar"/>
         <activity
             android:name=".ui.SplashScreenActivity"
             android:exported="true"

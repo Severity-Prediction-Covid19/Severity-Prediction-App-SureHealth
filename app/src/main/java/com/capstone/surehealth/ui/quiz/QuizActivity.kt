@@ -1,12 +1,13 @@
 package com.capstone.surehealth.ui.quiz
 
-import android.app.FragmentTransaction
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.*
 import com.capstone.surehealth.R
-import com.capstone.surehealth.databinding.ActivityMainBinding
 import com.capstone.surehealth.databinding.ActivityQuizBinding
+import com.capstone.surehealth.ui.result.ResultActivity
 
 class QuizActivity : AppCompatActivity() {
 
@@ -30,6 +31,9 @@ class QuizActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragmentContainer, prevFragment)
                 .commit()
+            binding.btnNext.btnLanjut.visibility = View.VISIBLE
+            binding.btnNext.btnHasil.visibility = View.GONE
+            binding.btnNext.btnKembali.isEnabled = false
         }
 
         binding.btnNext.btnLanjut.setOnClickListener {
@@ -37,6 +41,15 @@ class QuizActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragmentContainer, nextFragment)
                 .commit()
+            binding.btnNext.btnLanjut.visibility = View.GONE
+            binding.btnNext.btnHasil.visibility = View.VISIBLE
+            binding.btnNext.btnKembali.isEnabled = true
+        }
+
+        binding.btnNext.btnHasil.setOnClickListener {
+            val intent = Intent(this, ResultActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
     }
